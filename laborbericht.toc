@@ -1,0 +1,13 @@
+\providecommand \autonum@processReference [2]{}
+\contentsline {section}{\numberline {1}Einf\"uhrung}{2}
+\contentsline {subsection}{\numberline {1.1}Formeln}{2}
+\contentsline {section}{\numberline {2}Material und Methoden}{3}
+\contentsline {subsection}{\numberline {2.1}Material}{3}
+\contentsline {subsection}{\numberline {2.2}Aufbau}{3}
+\contentsline {subsection}{\numberline {2.3}Durchf\"uhrung}{4}
+\contentsline {section}{\numberline {3}Messwerte}{6}
+\contentsline {section}{\numberline {4}Auswertung}{7}
+\contentsline {subsection}{\numberline {4.1}Verh\"altnis $\frac {t}{t^{\ast }}$}{7}
+\contentsline {subsection}{\numberline {4.2}Diagramm $t(\alpha )$}{9}
+\contentsline {subsection}{\numberline {4.3}Geschwindigkeiten}{10}
+\contentsline {section}{\numberline {5}Quellen}{11}
