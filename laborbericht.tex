@@ -32,6 +32,7 @@
 \usepackage{autonum}
 
 
+
 \setlength{\headheight}{15pt}
 \pagestyle{fancy}
 \fancyfoot[C]{Seite \thepage{} von \pageref{LastPage}}
@@ -49,15 +50,15 @@
 %\fi\endgroup%
 
 
-% Zusätzliche Spalten mit variabler Breite fur tabularx
-%\newcolumntype{L}{>{\raggedright\arraybackslash}X} % linksbündig
+% ZusÃ¤tzliche Spalten mit variabler Breite fur tabularx
+%\newcolumntype{L}{>{\raggedright\arraybackslash}X} % linksbÃ¼ndig
 %\newcolumntype{C}{>{\centering\arraybackslash}X} % zentriert
-%\newcolumntype{R}{>{\raggedleft\arraybackslash}X} % rechtsbündig
+%\newcolumntype{R}{>{\raggedleft\arraybackslash}X} % rechtsbÃ¼ndig
 
 
-\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % linksbündig mit Breitenangabe
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % linksbÃ¼ndig mit Breitenangabe
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % zentriert mit Breitenangabe
-\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % rechtsbündig mit Breitenangabe
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % rechtsbÃ¼ndig mit Breitenangabe
 
 
 \setlength{\tabcolsep}{0pt}
@@ -71,7 +72,7 @@
 \def\sqrt{\mathpalette\DHLhksqrt}
 \def\DHLhksqrt#1#2{\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
 \advance\dimen0-0.3\ht0
-%0.3 ist das Maß für die Hakenlänge, relativ zum Inhalt der Wurzel
+%0.3 ist das MaÃŸ fÃ¼r die HakenlÃ¤nge, relativ zum Inhalt der Wurzel
 \setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
 {\box0\lower0.4pt\box2}}
 
@@ -92,11 +93,11 @@
 		\begin{tabular}{lp{5px}l}
 			{\fontsize{14}{16.8}\selectfont Bearbeiter:}&&{\fontsize{14}{16.8}\selectfont Dominik Eisele{}}\\
 			{\fontsize{14}{16.8}\selectfont Mitarbeiterin:}&&{\fontsize{14}{16.8}\selectfont Theresa Klein}\\
-			{\fontsize{14}{16.8}\selectfont Datum Versuchsdurchführung:}&&{\fontsize{14}{16.8}\selectfont 16.11.2015}\\
-			{\fontsize{14}{16.8}\selectfont Datum Abgabe:}&&{\fontsize{14}{16.8}\selectfont XX.12.2015}
+			{\fontsize{14}{16.8}\selectfont Datum VersuchsdurchfÃ¼hrung:}&&{\fontsize{14}{16.8}\selectfont 16.11.2015}\\
+			{\fontsize{14}{16.8}\selectfont Datum Abgabe:}&&{\fontsize{14}{16.8}\selectfont 03.12.2015}
 		\end{tabular}
 		\\[2\baselineskip]
-		{\fontsize{14}{16.8}\selectfont Ich erkläre an Eides statt, den vorliegenden Laborbericht selbst angefertigt zu haben. Alle fremden Quellen wurden in diesem Laborbericht benannt.}
+		{\fontsize{14}{16.8}\selectfont Ich erklÃ¤re an Eides statt, den vorliegenden Laborbericht selbst angefertigt zu haben. Alle fremden Quellen wurden in diesem Laborbericht benannt.}
 		\\[2\baselineskip]
 		{\fontsize{14}{16.8}\selectfont Aichwald, \today $  $ Dominik Eisele}
 	\end{flushleft}
@@ -110,24 +111,24 @@
 \newpage
 
 
-\section{Einführung}
+\section{EinfÃ¼hrung}
 	Bei dem Versuch "`Elektrolytischer Trog"' ergibt sich der Verlauf der Feldlinien zwischen zwei Elektroden. Auf diesen Verlauf
-	kommt man, indem man zwischen einem Plattenkondensator, der sich in einem Elektrolyt befindet, Äquipotentiallinien(-flächen)
-	sucht und sich diese Verläufe notiert. Durch diese Äquipotentiallinien muss man jeweils eine orthogonale einzeichnen, und
-	man erhält den Verlauf von Feldlinien in einem Plattenkondensator.\\
+	kommt man, indem man zwischen einem Plattenkondensator, der sich in einem Elektrolyt befindet, Ã„quipotentiallinien(-flÃ¤chen)
+	sucht und sich diese VerlÃ¤ufe notiert. Durch diese Ã„quipotentiallinien muss man jeweils eine orthogonale einzeichnen, und
+	man erhÃ¤lt den Verlauf von Feldlinien in einem Plattenkondensator.\\
 	An den Elektroden wurde eine Wechselspannung  angelegt, da sich so keine Debye-Schicht (Elektrochemische 
 	Raumladungsdoppelschicht), wie bei einer Gleichspannung, ausbreiten konnte. Bei dieser Raumladungsdoppelschicht 
-	würde zusätzlich Spannung abfallen.
+	wÃ¼rde zusÃ¤tzlich ca. \SI{1}{\volt} abfallen.
 
 \subsection{Formeln}
-	Betrag der elektrischen Feldstärke:\\
+	Betrag der elektrischen FeldstÃ¤rke:\\
 	\[E=\frac{\text{Potentialdifferenz}\Delta\varphi}{\text{Abstand der Potentiallinien}\Delta s}\]
 
 \newpage
 \section{Material und Methoden}
 
 \subsection{Material}
-	Für den Versuch verwendete Materialien:
+	FÃ¼r den Versuch verwendete Materialien:
 	\begin{itemize}
 		\item 1 $\times$ Netzteil
 		\item 3 $\times$ Kabel
@@ -139,17 +140,17 @@
 	\end{itemize}
 
 \subsection{Aufbau}
-	Ein mit Wasser gefüllter elektrolytischer Trog wie er in Abbildung \ref{fig:skizze_elektrolytischer_trog} zu sehen ist, besteht aus
+	Ein mit Wasser gefÃ¼llter elektrolytischer Trog wie er in Abbildung \ref{fig:skizze_elektrolytischer_trog} zu sehen ist, besteht aus
 	einer Kunststoffwanne, die an beiden Seiten jeweils eine plan liegende Elektrode besitzt. Diese Elektroden sind so platziert, dass
 	sie in das, als Elektrolyt verwendete, Leitungswasser hineinragen. An diese  Elektroden wurde eine Wechselspannung angelegt.
-	Außerdem wurde noch ein Multimeter installiert, sodass man mit einer Messspitze die Potentialdifferenz zwischen einer Elektrode
+	AuÃŸerdem wurde noch ein Multimeter installiert, sodass man mit einer Messspitze die Potentialdifferenz zwischen einer Elektrode
 	und einer beliebigen Stelle im Elektrolyt messen konnte.\\
-	In der zweiten Messreihe wurde noch ein Metallring in den elektrolytischen Trog gelegt, sodass das Magnetfeld durch ihn gestört
+	In der zweiten Messreihe wurde noch ein Metallring in den elektrolytischen Trog gelegt, sodass das Magnetfeld durch ihn gestÃ¶rt
 	wird.
 	
 
 	
-	\begin{figure}[h!]
+	\begin{figure}[H!]
 		\centering
 		\scalebox{.9}{\input{skizze_elektrolytischer_trog}}
 		\caption{Skizze des Versuchsaufbaus}
@@ -157,44 +158,33 @@
 	\end{figure}
 
 \newpage
-\subsection{Durchführung}
-	Nachdem der Versuch aufgebaut wurde, wurden mit der Messspitze Äquipotentiallinien im elektrischen Feld gesucht. Diese 
-	Äquipotentiallinien wurden auf Millimeterpapier übertragen, die Spannung betrug hier dabei \SI{2}{\volt}, \SI{3}{\volt},
-	\SI{4}{\volt}, \SI{5}{\volt}, \SI{6}{\volt}, \SI{7}{\volt} und \SI{8}{\volt}. Anschließend wurden die Magnetfeldlinien 
+\subsection{DurchfÃ¼hrung}
+	Nachdem der Versuch aufgebaut wurde, wurden mit der Messspitze Ã„quipotentiallinien im elektrischen Feld gesucht. Diese 
+	Ã„quipotentiallinien wurden auf Millimeterpapier Ã¼bertragen, die Spannung betrug hier dabei \SI{2}{\volt}, \SI{3}{\volt},
+	\SI{4}{\volt}, \SI{5}{\volt}, \SI{6}{\volt}, \SI{7}{\volt} und \SI{8}{\volt}.\\
+	AnschlieÃŸend wurden die Magnetfeldlinien 
 	eingezeichnet, und der Versuch mit einem, sich im elektrolytischem Trog befindenden, Metallring wiederholt.
 
 
 \newpage
 \section{Messwerte}
-	\begin{table}[h!]
-	\centering
-	\resizebox{\linewidth}{!}{
-		\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c}
-			Messreihe 	&$l_x$				&$l_y$&				 $\alpha$			& $t^{\ast}_1$ 		& $t^{\ast}_2$		& $t^{\ast}_3$ 		&$\overline{t^{\ast}}$	& $t_1$ 				& $t_2$ 			& $t_3$ 			&$\overline{t}$		&$\sigma_{m_t}$	\\ \hline
-				1 	&\SI{12.2}{\centi\metre}	&\SI{10.3}{\centi\metre}	& \ang{1.56}		& \SI{2.8}{\second} 	&\SI{2.5}{\second}	&\SI{2.6}{\second}	&\SI{2.63}{\second}		& \SI{3.1}{\second}		& \SI{3.2}{\second}	& \SI{3.0}{\second}	&\SI{3.10}{\second}	&\num{0.09}		\\ \hline
-				2	&\SI{13.0}{\centi\metre}	&\SI{10.3}{\centi\metre}	& \ang{2.21}		& \SI{2.0}{\second} 	&\SI{1.7}{\second}	&\SI{1.6}{\second}	&\SI{1.77}{\second}		& \SI{2.5}{\second}		& \SI{2.6}{\second}	& \SI{2.8}{\second}	&\SI{2.63}{\second}	&\num{0.13}		\\ \hline
-				3	&\SI{13.2}{\centi\metre}	&\SI{10.3}{\centi\metre}	& \ang{2.37}		& \SI{2.0}{\second} 	&\SI{2.3}{\second}	&\SI{2.3}{\second}	&\SI{2.20}{\second}		& \SI{2.6}{\second}		& \SI{2.6}{\second}	& \SI{2.5}{\second}	&\SI{2.57}{\second}	&\num{0.05}		\\ \hline
-				4 	&\SI{13.5}{\centi\metre}	&\SI{10.3}{\centi\metre}	& \ang{2.62}		& \SI{1.6}{\second} 	&\SI{1.6}{\second}	&\SI{1.5}{\second}	&\SI{1.57}{\second}		& \SI{2.3}{\second}		& \SI{2.5}{\second}	& \SI{2.3}{\second}	&\SI{2.37}{\second}	&\num{0.10}		\\ \hline
-				5 	&\SI{13.8}{\centi\metre}	&\SI{10.3}{\centi\metre}	& \ang{2.87}		& \SI{1.6}{\second} 	&\SI{1.5}{\second}	&\SI{1.6}{\second}	&\SI{1.57}{\second}		& \SI{2.4}{\second}		& \SI{2.3}{\second}	& \SI{2.4}{\second}	&\SI{2.33}{\second}	&\num{0.05}		\\ \hline
-				6 	&\SI{14.6}{\centi\metre}	&\SI{10.3}{\centi\metre}	& \ang{3.52}		& \SI{1.2}{\second} 	&\SI{1.4}{\second}	&\SI{1.4}{\second}	&\SI{1.33}{\second}		& \SI{2.1}{\second}		& \SI{2.2}{\second}	& \SI{2.2}{\second}	&\SI{2.17}{\second}	&\num{0.05}		\\ \hline
-				7 	&\SI{14.8}{\centi\metre}	&\SI{10.3}{\centi\metre}	& \ang{3.69}		& \SI{1.3}{\second}	&\SI{1.4}{\second}	&\SI{1.3}{\second}	&\SI{1.33}{\second}		& \SI{2.0}{\second}		& \SI{2.0}{\second}	& \SI{2.2}{\second}	&\SI{2.07}{\second}	&\num{0.10}		\\ \hline
-				8 	&\SI{15.2}{\centi\metre}	&\SI{10.3}{\centi\metre}	& \ang{4.01}		& \SI{1.5}{\second}	&\SI{1.3}{\second}	&\SI{1.4}{\second}	&\SI{1.40}{\second}		& \SI{2.1}{\second}		& \SI{2.0}{\second}	& \SI{2.0}{\second}	&\SI{2.03}{\second}	&\num{0.05}		\\ \hline
-				9 	&\SI{16.3}{\centi\metre}	&\SI{10.3}{\centi\metre}	& \ang{4.92}		& \SI{1.1}{\second}	&\SI{1.0}{\second}	&\SI{1.1}{\second}	&\SI{1,07}{\second}		& \SI{1.3}{\second}		& \SI{1.5}{\second}	& \SI{1.7}{\second}	&\SI{1.50}{\second}	&\num{0.17}		\\ \hline
-				10	&\SI{17.3}{\centi\metre}	&\SI{10.3}{\centi\metre}	& \ang{5.74}		& \SI{1.1}{\second}	&\SI{1.0}{\second}	&\SI{0.9}{\second}	&\SI{1.00}{\second}		& \SI{1.4}{\second}		& \SI{1.5}{\second}	& \SI{1.5}{\second} 	&\SI{1.47}{\second}	&\num{0.05}
-		\end{tabular}
-	}
-	\caption{Messwerte}
-	\label{tab:Messwerte}
-	\end{table}
+	Orginal Laboraufschriebe siehe Anhang.
+	
 
+	
+	\begin{figure}
+	\input{messwerte}
+	\end{figure}
+
+	
 
 \newpage
 \section{Auswertung}
-	\subsection{Verhältnis $\frac{t}{t^{\ast}}$}
+	\subsection{VerhÃ¤ltnis $\frac{t}{t^{\ast}}$}
 	\begin{table}[h!]
 	\centering
 	\begin{tabular}{c|c}
-		Messung 						& Verhältnis $\frac{t}{t^{\ast}}$		\\ \hline
+		Messung 						& VerhÃ¤ltnis $\frac{t}{t^{\ast}}$	\\ \hline
 		1							& 1,18						\\ \hline
 		2							& 1,49						\\ \hline
 		3							& 1,17						\\ \hline
@@ -207,12 +197,12 @@
 		10							& 1,47						\\ \hline
 		$\bf\overline{\frac{t}{t^{\ast}}}$	& $\bf1,43$
 	\end{tabular}
-	\caption{Verhältnis $\frac{t}{t^{\ast}}$}
+	\caption{VerhÃ¤ltnis $\frac{t}{t^{\ast}}$}
 	\label{tab:tzut*}
 	\end{table}
 
 	
-	Das theoretische Verhältnis für $\frac{t}{t^{\ast}}$ beträgt:$\sqrt{2}$
+	Das theoretische VerhÃ¤ltnis fÃ¼r $\frac{t}{t^{\ast}}$ betrÃ¤gt:$\sqrt{2}$
 		\begin{align}
 			s &= \frac{1}{2} \cdot a \cdot t^2 &\Rightarrow t &=\sqrt{\frac{2s}{a}}\\
 			 t^{\ast} &=\sqrt{\frac{2 \cdot \frac{1}{2} \cdot s}{a}} &\Rightarrow  t^{\ast} &= \sqrt{\frac{s}{a}}	\\
@@ -220,8 +210,8 @@
 			\frac{t}{t^{\ast}} &= \sqrt{2}		\\
 			\frac{t}{t^{\ast}} &\approx \num{1.414}
 		\end{align}
-	Der aus den Messwerten ermittelte Quotient ist dem theoretischen sehr ähnlich, die Differenz des gemessenen und des 
-	theoretischen Wertes beträgt nur $1,43-\sqrt{2}\approx 0,016$.
+	Der aus den Messwerten ermittelte Quotient ist dem theoretischen sehr Ã¤hnlich, die Differenz des gemessenen und des 
+	theoretischen Wertes betrÃ¤gt nur $1,43-\sqrt{2}\approx 0,016$.
 
 
 \newpage
@@ -254,8 +244,8 @@
 	%\label{fig:Diagramm}
 	%\end{figure}
 \noindent
-	Die abgebildete Kurve $t=\sqrt{\frac{2s}{\sin{(\alpha)}\cdot g}}$ beschreibt den Idealverlauf der Zeit, in Abhängigkeit des Winkels 
-	$\alpha$, die der Wagen benötigt, die \SI{1.37}{\metre} lange Rollbahn herunterzufahren.\\
+	Die abgebildete Kurve $t=\sqrt{\frac{2s}{\sin{(\alpha)}\cdot g}}$ beschreibt den Idealverlauf der Zeit, in AbhÃ¤ngigkeit des Winkels 
+	$\alpha$, die der Wagen benÃ¶tigt, die \SI{1.37}{\metre} lange Rollbahn herunterzufahren.\\
 	Die Gleichung $t=\sqrt{\frac{2s}{\sin{(\alpha)}\cdot g}}$ kann man aus der Gleichung $s=\frac{1}{2}\cdot a\cdot t^2$ herleiten:
 	\begin{align}
 		s &= \frac{1}{2} \cdot a \cdot t^2 &\Rightarrow t &=\sqrt{\frac{2s}{a}} \label{eq:formel1} \\
@@ -266,9 +256,9 @@
 		t&=\sqrt{\frac{2s}{\sin{(\alpha)}\cdot g}}
 	\end{align}
 	Aus Abbildung \ref{fig:Diagramm} ist erkennbar, dass die Messwerte, bis zu dem Winkel $\alpha=\ang{4.01}$, dem Idealverlauf
-	sehr ähnlich sind, größere Abweichungen gibt es erst ab dem Winkel $\alpha=\ang{4.92}$. Da liegt daran, dass, der Wagen, 
-	bei einem größeren Winkel eine höhere Endgeschwindigkeit aufbaut, und somit das Erreichen des Endes der Rollbahn, für das
-	menschliche Auge, schwer abschätzbar ist. 
+	sehr Ã¤hnlich sind, grÃ¶ÃŸere Abweichungen gibt es erst ab dem Winkel $\alpha=\ang{4.92}$. Da liegt daran, dass, der Wagen, 
+	bei einem grÃ¶ÃŸeren Winkel eine hÃ¶here Endgeschwindigkeit aufbaut, und somit das Erreichen des Endes der Rollbahn, fÃ¼r das
+	menschliche Auge, schwer abschÃ¤tzbar ist. 
 
 \newpage
 	\subsection{Geschwindigkeiten}
