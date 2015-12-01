@@ -5,22 +5,22 @@
 		\definecolor{green}{HTML}{00FF00}
 		\definecolor{purple}{HTML}{461B7E}
 		\definecolor{taupe}{HTML}{347235}
-		\definecolor{gray}{HTML}{B6B6B4}
+		\definecolor{grey}{HTML}{B6B6B4}
 
 		
 		% Gitter
-		\foreach \x in {0.1,0.2,...,11} \draw[- ,gray ,thin] (\x,-9) -- (\x,9);
-		\foreach \y in {-9,-8.9,...,9} \draw[- ,gray ,thin] (0,\y) -- (11,\y);
-		\foreach \x in {0.5,1.0,...,11} \draw[- ,gray ,thin] (\x,-9) -- (\x,9);
-		\foreach \x in {1.0,...,11} \draw[- ,black ,thin] (\x,-9) -- (\x,9);
-		\foreach \y in {-9,-8.5,...,9} \draw[- ,gray ,thin] (0,\y) -- (11,\y);
-		\foreach \y in {-9,...,9} \draw[- ,black ,thin] (0,\y) -- (11,\y);
+		\foreach \x in {0.1,0.2,...,11} \draw[- ,grey ,thin] (\x,-8.8) -- (\x,9);
+		\foreach \y in {-8.8,-8.7,...,9} \draw[- ,grey ,thin] (0,\y) -- (11,\y);
+		\foreach \x in {0.5,1.0,...,11} \draw[- ,gray ,thin] (\x,-8.8) -- (\x,9);
+		\foreach \x in {1.0,...,11} \draw[- ,black ,thin] (\x,-8.8) -- (\x,9);
+		\foreach \y in {-8.5,-8,...,9} \draw[- ,gray ,thin] (0,\y) -- (11,\y);
+		\foreach \y in {-8,...,9} \draw[- ,black ,thin] (0,\y) -- (11,\y);
 		% Achsen
 		\draw[- ,thick] (0,0) -- (11,0) node[below right] {};
-		\draw[- ,thick] (0,-9) -- (0,9) node[left] {};
+		\draw[- ,thick] (0,-8.8) -- (0,9) node[left] {};
 		\draw[- ,thick] (0,9) -- (11,9) node[left] {};
-		\draw[- ,thick] (11,-9) -- (11,9) node[left] {};
-		\draw[- ,thick] (0,-9) -- (11,-9) node[left] {};
+		\draw[- ,thick] (11,-8.8) -- (11,9) node[left] {};
+		\draw[- ,thick] (0,-8.8) -- (11,-8.8) node[left] {};
 		% Achsbeschriftung
 		\foreach \x in {,1,...,10} \draw (\x,0.05) -- (\x,-0.05) node [below] {\x};
 		\foreach \y in {-8,...,8} \draw (0.1,\y) -- (-0.1,\y) node [left] {\y};
@@ -98,7 +98,7 @@
 			\node[pink] (282) at (3.60,-1.00) {\textsf{+}};
 			\node[pink] (292) at (3.50,-0.50) {\textsf{+}};
 
-			\draw [pink] plot [smooth] coordinates {(0.7,9) (2,7.5) (3,6) (3.25,5.5) (3.4,4.5) (3.6,0) (3.4,-4) (2.1,-7.5) (0.3,-9)};
+			\draw [pink] plot [smooth] coordinates {(0.7,9) (2,7.5) (3,6) (3.25,5.5) (3.4,4.5) (3.6,0) (3.4,-4) (2.1,-7.5) (0.3,-8.8)};
 
 		% 4V		
 			\node[cyan]  (13) at (4.30,9.00) {\textsf{+}};
@@ -121,7 +121,7 @@
 			\node[cyan] (183) at (4.80,0.50) {\textsf{+}};
 			\node[cyan] (193) at (4.80,0.00) {\textsf{+}};
 			
-			\node[cyan] (203) at (4.20,-9.00) {\textsf{+}};
+			\node[cyan] (203) at (4.20,-8.80) {\textsf{+}};
 			\node[cyan] (213) at (4.30,-8.50) {\textsf{+}};
 			\node[cyan] (223) at (4.30,-8.00) {\textsf{+}};
 			\node[cyan] (233) at (4.50,-7.50) {\textsf{+}};
@@ -140,7 +140,7 @@
 			\node[cyan] (363) at (5.00,-1.00) {\textsf{+}};
 			\node[cyan] (373) at (5.00,-0.50) {\textsf{+}};
 
-			\draw [cyan] plot [smooth] coordinates {(4.3,9) (4.7,8) (4.8,7.5) (5,6) (5,0) (4.8,-5) (4.3,-8) (4.1,-9)};
+			\draw [cyan] plot [smooth] coordinates {(4.3,9) (4.7,8) (4.8,7.5) (5,6) (5,0) (4.8,-5) (4.3,-8) (4.1,-8.8)};
 
 		% 5V	
 			\node[green]  (14) at (6.90,9.00) {\textsf{+}};
@@ -180,9 +180,9 @@
 			\node[green] (344) at (6.70,-7.50) {\textsf{+}};
 			\node[green] (354) at (6.90,-8.00) {\textsf{+}};
 			\node[green] (364) at (7.00,-8.50) {\textsf{+}};
-			\node[green] (374) at (7.10,-9.00) {\textsf{+}};
+			\node[green] (374) at (7.10,-8.80) {\textsf{+}};
 		
-			\draw [green] plot [smooth] coordinates {(6.9,9) (6.5,8) (6.2,0) (6.6,-7) (6.75,-8) (7.1,-9)};
+			\draw [green] plot [smooth] coordinates {(6.9,9) (6.5,8) (6.2,0) (6.6,-7) (6.75,-8) (7.1,-8.8)};
 
 		% 6V		
 			\node (05) at (11,8.55) {};
