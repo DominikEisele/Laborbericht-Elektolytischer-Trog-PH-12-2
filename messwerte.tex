@@ -1,0 +1,244 @@
+\begin{tikzpicture}[xscale=1.2,yscale=1.2]
+		
+		\definecolor{cyan}{HTML}{4298AF}
+
+		% Achsen
+		\draw[-] (0,0) -- (11,0) node[below right] {};
+		\draw[-] (0,-9) -- (0,9) node[left] {};
+		\draw[-] (0,9) -- (11,9) node[left] {};
+		\draw[-] (11,-9) -- (11,9) node[left] {};
+		\draw[-] (0,-9) -- (11,-9) node[left] {};
+		% Gitter
+		\foreach \x in {0.1,0.2,...,11} \draw[- ,line width=0.00001cm] (\x,-9) -- (\x,9);
+		\foreach \y in {-9,-8.9,...,9} \draw[- ,line width=0.00001cm] (0,\y) -- (11,\y);
+		\foreach \x in {0.5,1.0,...,11} \draw[- ,line width=0.0001cm] (\x,-9) -- (\x,9);
+		\foreach \x in {1.0,...,11} \draw[- ,line width=0.0005cm] (\x,-9) -- (\x,9);
+		\foreach \y in {-9,-8.5,...,9} \draw[- ,line width=0.0001cm] (0,\y) -- (11,\y);
+		\foreach \y in {-9,...,9} \draw[- ,line width=0.0005cm] (0,\y) -- (11,\y);
+		% Achsbeschriftung
+		\foreach \x in {,1,...,10} \draw (\x,0.05) -- (\x,-0.05) node [below] {\x};
+		\foreach \y in {-8,...,8} \draw (0.1,\y) -- (-0.1,\y) node [left] {\y};
+		% Funktion
+		%\draw[red, samples=50, domain=1.000244714:7] plot (\x, {sqrt((2*1.37)/(sin(\x )*9.81))});
+		% Funktionbeschriftung
+		%\node (11) at (7 , 1.513887287) [below] {$t=\sqrt{\frac{2s}{\sin{(\alpha)}\cdot g}}$};	
+		% Messpunkte
+		
+		% 2V		
+			\node[black]  (1) at (1.00,6.00) {\textsf{+}};
+			\node[black]  (2) at (1.40,5.50) {\textsf{+}};
+			\node[black]  (3) at (1.80,5.00) {\textsf{+}};
+			\node[black]  (4) at (1.90,4.50) {\textsf{+}};
+			\node[black]  (5) at (2.00,4.00) {\textsf{+}};
+			\node[black]  (6) at (2.10,3.50) {\textsf{+}};
+			\node[black]  (7) at (2.15,3.00) {\textsf{+}};
+			\node[black]  (8) at (2.20,2.50) {\textsf{+}};
+			\node[black]  (9) at (2.20,2.00) {\textsf{+}};
+			\node[black] (11) at (2.20,1.50) {\textsf{+}};
+			\node[black] (12) at (2.20,1.00) {\textsf{+}};
+			\node[black] (13) at (2.30,0.50) {\textsf{+}};
+			\node[black] (14) at (2.30,0.00) {\textsf{+}};
+			
+			\node[black] (16) at (0.80,-5.50) {\textsf{+}};
+			\node[black] (17) at (1.30,-5.00) {\textsf{+}};
+			\node[black] (18) at (1.70,-4.50) {\textsf{+}};
+			\node[black] (19) at (1.90,-4.00) {\textsf{+}};
+			\node[black] (20) at (2.05,-3.50) {\textsf{+}};
+			\node[black] (21) at (2.10,-3.00) {\textsf{+}};
+			\node[black] (22) at (2.20,-2.50) {\textsf{+}};
+			\node[black] (23) at (2.20,-2.00) {\textsf{+}};
+			\node[black] (24) at (2.20,-1.50) {\textsf{+}};
+			\node[black] (25) at (2.20,-1.00) {\textsf{+}};
+			\node[black] (26) at (2.30,-0.50) {\textsf{+}};
+		
+		% 3V		
+			\node[pink]  (1) at (0.70,9.00) {\textsf{+}};
+			\node[pink]  (2) at (1.20,8.50) {\textsf{+}};
+			\node[pink]  (3) at (1.60,8.00) {\textsf{+}};
+			\node[pink]  (4) at (2.00,7.50) {\textsf{+}};
+			\node[pink]  (5) at (2.40,7.00) {\textsf{+}};
+			\node[pink]  (6) at (2.70,6.50) {\textsf{+}};
+			\node[pink]  (1) at (3.00,6.00) {\textsf{+}};
+			\node[pink]  (2) at (3.10,5.50) {\textsf{+}};
+			\node[pink]  (3) at (3.30,5.00) {\textsf{+}};
+			\node[pink]  (4) at (3.40,4.50) {\textsf{+}};
+			\node[pink]  (5) at (3.40,4.00) {\textsf{+}};
+			\node[pink]  (6) at (3.50,3.50) {\textsf{+}};
+			\node[pink]  (7) at (3.50,3.00) {\textsf{+}};
+			\node[pink]  (8) at (3.50,2.50) {\textsf{+}};
+			\node[pink]  (9) at (3.50,2.00) {\textsf{+}};
+			\node[pink] (11) at (3.60,1.50) {\textsf{+}};
+			\node[pink] (12) at (3.60,1.00) {\textsf{+}};
+			\node[pink] (13) at (3.60,0.50) {\textsf{+}};
+			\node[pink] (14) at (3.40,0.00) {\textsf{+}};
+			
+			
+			\node[pink] (20) at (1.50,-8.00) {\textsf{+}};
+			\node[pink] (16) at (1.80,-7.50) {\textsf{+}};
+			\node[pink] (17) at (1.90,-7.00) {\textsf{+}};
+			\node[pink] (18) at (2.70,-6.50) {\textsf{+}};
+			\node[pink] (19) at (2.60,-6.00) {\textsf{+}};
+			\node[pink] (16) at (2.90,-5.50) {\textsf{+}};
+			\node[pink] (17) at (3.00,-5.00) {\textsf{+}};
+			\node[pink] (18) at (3.30,-4.50) {\textsf{+}};
+			\node[pink] (19) at (3.40,-4.00) {\textsf{+}};
+			\node[pink] (20) at (3.40,-3.50) {\textsf{+}};
+			\node[pink] (21) at (3.50,-3.00) {\textsf{+}};
+			\node[pink] (22) at (3.60,-2.50) {\textsf{+}};
+			\node[pink] (23) at (3.50,-2.00) {\textsf{+}};
+			\node[pink] (24) at (3.60,-1.50) {\textsf{+}};
+			\node[pink] (25) at (3.60,-1.00) {\textsf{+}};
+			\node[pink] (26) at (3.50,-0.50) {\textsf{+}};
+
+		% 4V		
+			\node[cyan]  (1) at (4.30,9.00) {\textsf{+}};
+			\node[cyan]  (2) at (4.50,8.50) {\textsf{+}};
+			\node[cyan]  (3) at (4.50,8.00) {\textsf{+}};
+			\node[cyan]  (4) at (4.60,7.50) {\textsf{+}};
+			\node[cyan]  (5) at (4.60,7.00) {\textsf{+}};
+			\node[cyan]  (6) at (4.80,6.50) {\textsf{+}};
+			\node[cyan]  (1) at (4.90,6.00) {\textsf{+}};
+			\node[cyan]  (2) at (4.90,5.50) {\textsf{+}};
+			\node[cyan]  (3) at (4.90,5.00) {\textsf{+}};
+			\node[cyan]  (4) at (4.90,4.50) {\textsf{+}};
+			\node[cyan]  (5) at (4.90,4.00) {\textsf{+}};
+			\node[cyan]  (6) at (4.90,3.50) {\textsf{+}};
+			\node[cyan]  (7) at (4.90,3.00) {\textsf{+}};
+			\node[cyan]  (8) at (4.90,2.50) {\textsf{+}};
+			\node[cyan]  (9) at (4.90,2.00) {\textsf{+}};
+			\node[cyan] (11) at (4.90,1.50) {\textsf{+}};
+			\node[cyan] (12) at (4.90,1.00) {\textsf{+}};
+			\node[cyan] (13) at (4.80,0.50) {\textsf{+}};
+			\node[cyan] (14) at (4.80,0.00) {\textsf{+}};
+			
+			\node[cyan] (20) at (4.20,-9.00) {\textsf{+}};
+			\node[cyan] (16) at (4.30,-8.50) {\textsf{+}};
+			\node[cyan] (17) at (4.30,-8.00) {\textsf{+}};
+			\node[cyan] (18) at (4.50,-7.50) {\textsf{+}};
+			\node[cyan] (19) at (4.55,-7.00) {\textsf{+}};
+			\node[cyan] (16) at (4.60,-6.50) {\textsf{+}};
+			\node[cyan] (17) at (4.65,-6.00) {\textsf{+}};
+			\node[cyan] (16) at (4.70,-5.50) {\textsf{+}};
+			\node[cyan] (17) at (4.80,-5.00) {\textsf{+}};
+			\node[cyan] (18) at (4.80,-4.50) {\textsf{+}};
+			\node[cyan] (19) at (4.80,-4.00) {\textsf{+}};
+			\node[cyan] (20) at (4.85,-3.50) {\textsf{+}};
+			\node[cyan] (21) at (4.90,-3.00) {\textsf{+}};
+			\node[cyan] (22) at (4.90,-2.50) {\textsf{+}};
+			\node[cyan] (23) at (5.00,-2.00) {\textsf{+}};
+			\node[cyan] (24) at (5.00,-1.50) {\textsf{+}};
+			\node[cyan] (25) at (5.00,-1.00) {\textsf{+}};
+			\node[cyan] (26) at (5.00,-0.50) {\textsf{+}};
+
+		% 5V		
+			\node[green]  (1) at (1.80,6.00) {\textsf{+}};
+			\node[green]  (2) at (1.40,5.50) {\textsf{+}};
+			\node[green]  (3) at (1.80,5.00) {\textsf{+}};
+			\node[green]  (4) at (1.90,4.50) {\textsf{+}};
+			\node[green]  (5) at (2.00,4.00) {\textsf{+}};
+			\node[green]  (6) at (2.10,3.50) {\textsf{+}};
+			\node[green]  (7) at (2.15,3.00) {\textsf{+}};
+			\node[green]  (8) at (2.20,2.50) {\textsf{+}};
+			\node[green]  (9) at (2.20,2.00) {\textsf{+}};
+			\node[green] (11) at (2.20,1.50) {\textsf{+}};
+			\node[green] (12) at (2.20,1.00) {\textsf{+}};
+			\node[green] (13) at (2.30,0.50) {\textsf{+}};
+			\node[green] (14) at (2.30,0.00) {\textsf{+}};
+			
+			\node[green] (16) at (0.80,-5.50) {\textsf{+}};
+			\node[green] (17) at (1.30,-5.00) {\textsf{+}};
+			\node[green] (18) at (1.70,-4.50) {\textsf{+}};
+			\node[green] (19) at (1.90,-4.00) {\textsf{+}};
+			\node[green] (20) at (2.05,-3.50) {\textsf{+}};
+			\node[green] (21) at (2.10,-3.00) {\textsf{+}};
+			\node[green] (22) at (2.20,-2.50) {\textsf{+}};
+			\node[green] (23) at (2.20,-2.00) {\textsf{+}};
+			\node[green] (24) at (2.20,-1.50) {\textsf{+}};
+			\node[green] (25) at (2.20,-1.00) {\textsf{+}};
+			\node[green] (26) at (2.30,-0.50) {\textsf{+}};
+
+		% 6V		
+			\node[red]  (1) at (1.20,6.00) {\textsf{+}};
+			\node[red]  (2) at (1.40,5.50) {\textsf{+}};
+			\node[red]  (3) at (1.80,5.00) {\textsf{+}};
+			\node[red]  (4) at (1.90,4.50) {\textsf{+}};
+			\node[red]  (5) at (2.00,4.00) {\textsf{+}};
+			\node[red]  (6) at (2.10,3.50) {\textsf{+}};
+			\node[red]  (7) at (2.15,3.00) {\textsf{+}};
+			\node[red]  (8) at (2.20,2.50) {\textsf{+}};
+			\node[red]  (9) at (2.20,2.00) {\textsf{+}};
+			\node[red] (11) at (2.20,1.50) {\textsf{+}};
+			\node[red] (12) at (2.20,1.00) {\textsf{+}};
+			\node[red] (13) at (2.30,0.50) {\textsf{+}};
+			\node[red] (14) at (2.30,0.00) {\textsf{+}};
+			
+			\node[red] (16) at (0.80,-5.50) {\textsf{+}};
+			\node[red] (17) at (1.30,-5.00) {\textsf{+}};
+			\node[red] (18) at (1.70,-4.50) {\textsf{+}};
+			\node[red] (19) at (1.90,-4.00) {\textsf{+}};
+			\node[red] (20) at (2.05,-3.50) {\textsf{+}};
+			\node[red] (21) at (2.10,-3.00) {\textsf{+}};
+			\node[red] (22) at (2.20,-2.50) {\textsf{+}};
+			\node[red] (23) at (2.20,-2.00) {\textsf{+}};
+			\node[red] (24) at (2.20,-1.50) {\textsf{+}};
+			\node[red] (25) at (2.20,-1.00) {\textsf{+}};
+			\node[red] (26) at (2.30,-0.50) {\textsf{+}};
+
+		% 7V		
+			\node[purple]  (1) at (2.00,6.00) {\textsf{+}};
+			\node[purple]  (2) at (1.40,5.50) {\textsf{+}};
+			\node[purple]  (3) at (1.80,5.00) {\textsf{+}};
+			\node[purple]  (4) at (1.90,4.50) {\textsf{+}};
+			\node[purple]  (5) at (2.00,4.00) {\textsf{+}};
+			\node[purple]  (6) at (2.10,3.50) {\textsf{+}};
+			\node[purple]  (7) at (2.15,3.00) {\textsf{+}};
+			\node[purple]  (8) at (2.20,2.50) {\textsf{+}};
+			\node[purple]  (9) at (2.20,2.00) {\textsf{+}};
+			\node[purple] (11) at (2.20,1.50) {\textsf{+}};
+			\node[purple] (12) at (2.20,1.00) {\textsf{+}};
+			\node[purple] (13) at (2.30,0.50) {\textsf{+}};
+			\node[purple] (14) at (2.30,0.00) {\textsf{+}};
+			
+			\node[purple] (16) at (0.80,-5.50) {\textsf{+}};
+			\node[purple] (17) at (1.30,-5.00) {\textsf{+}};
+			\node[purple] (18) at (1.70,-4.50) {\textsf{+}};
+			\node[purple] (19) at (1.90,-4.00) {\textsf{+}};
+			\node[purple] (20) at (2.05,-3.50) {\textsf{+}};
+			\node[purple] (21) at (2.10,-3.00) {\textsf{+}};
+			\node[purple] (22) at (2.20,-2.50) {\textsf{+}};
+			\node[purple] (23) at (2.20,-2.00) {\textsf{+}};
+			\node[purple] (24) at (2.20,-1.50) {\textsf{+}};
+			\node[purple] (25) at (2.20,-1.00) {\textsf{+}};
+			\node[purple] (26) at (2.30,-0.50) {\textsf{+}};
+
+		% 8V		
+			\node[orange]  (1) at (1.20,6.00) {\textsf{+}};
+			\node[orange]  (2) at (1.40,5.50) {\textsf{+}};
+			\node[orange]  (3) at (1.80,5.00) {\textsf{+}};
+			\node[orange]  (4) at (1.90,4.50) {\textsf{+}};
+			\node[orange]  (5) at (2.00,4.00) {\textsf{+}};
+			\node[orange]  (6) at (2.10,3.50) {\textsf{+}};
+			\node[orange]  (7) at (2.15,3.00) {\textsf{+}};
+			\node[orange]  (8) at (2.20,2.50) {\textsf{+}};
+			\node[orange]  (9) at (2.20,2.00) {\textsf{+}};
+			\node[orange] (11) at (2.20,1.50) {\textsf{+}};
+			\node[orange] (12) at (2.20,1.00) {\textsf{+}};
+			\node[orange] (13) at (2.30,0.50) {\textsf{+}};
+			\node[orange] (14) at (2.30,0.00) {\textsf{+}};
+			
+			\node[orange] (16) at (0.80,-5.50) {\textsf{+}};
+			\node[orange] (17) at (1.30,-5.00) {\textsf{+}};
+			\node[orange] (18) at (1.70,-4.50) {\textsf{+}};
+			\node[orange] (19) at (1.90,-4.00) {\textsf{+}};
+			\node[orange] (20) at (2.05,-3.50) {\textsf{+}};
+			\node[orange] (21) at (2.10,-3.00) {\textsf{+}};
+			\node[orange] (22) at (2.20,-2.50) {\textsf{+}};
+			\node[orange] (23) at (2.20,-2.00) {\textsf{+}};
+			\node[orange] (24) at (2.20,-1.50) {\textsf{+}};
+			\node[orange] (25) at (2.20,-1.00) {\textsf{+}};
+			\node[orange] (26) at (2.30,-0.50) {\textsf{+}};
+
+
+	\end{tikzpicture}
+	\caption{Messwerte}
+	\label{fig:Diagramm1}
