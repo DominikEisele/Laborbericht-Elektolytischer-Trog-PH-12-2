@@ -1,4 +1,4 @@
-\begin{tikzpicture}[xscale=1.2,yscale=1.2]
+\begin{tikzpicture}[xscale=1.15,yscale=1.15]
 		
 		\definecolor{cyan}{HTML}{0000FF}
 		\definecolor{pink}{HTML}{F52887}
@@ -10,7 +10,7 @@
 		
 		% Gitter
 		\foreach \x in {0.1,0.2,...,11} \draw[- ,grey ,thin] (\x,-8.8) -- (\x,9);
-		\foreach \y in {-8.8,-8.7,...,9} \draw[- ,grey ,thin] (0,\y) -- (11,\y);
+		\foreach \y in {-8.8,-8.8,...,9} \draw[- ,grey ,thin] (0,\y) -- (11,\y);
 		\foreach \x in {0.5,1.0,...,11} \draw[- ,gray ,thin] (\x,-8.8) -- (\x,9);
 		\foreach \x in {1.0,...,11} \draw[- ,black ,thin] (\x,-8.8) -- (\x,9);
 		\foreach \y in {-8.5,-8,...,9} \draw[- ,gray ,thin] (0,\y) -- (11,\y);
@@ -34,87 +34,158 @@
 			\draw (5,-7) circle (1.8);
 
 		% 2V		
-			\node[black]  (11) at (0.80,6.00) {\textsf{+}};		
-			\node[black]  (31) at (1.50,5.00) {\textsf{+}};		
-			\node[black]  (51) at (2.00,4.00) {\textsf{+}};	
-			\node[black]  (71) at (2.10,3.00) {\textsf{+}};		
-			\node[black]  (91) at (2.10,2.00) {\textsf{+}};
+			\node[black]  (11) at (1.00,6.00) {\textsf{+}};
+			\node[black]  (21) at (1.40,5.50) {\textsf{+}};
+			\node[black]  (31) at (1.80,5.00) {\textsf{+}};
+			\node[black]  (41) at (1.90,4.50) {\textsf{+}};
+			\node[black]  (51) at (2.00,4.00) {\textsf{+}};
+			\node[black]  (61) at (2.10,3.50) {\textsf{+}};
+			\node[black]  (71) at (2.15,3.00) {\textsf{+}};
+			\node[black]  (81) at (2.20,2.50) {\textsf{+}};
+			\node[black]  (91) at (2.20,2.00) {\textsf{+}};
+			\node[black] (101) at (2.20,1.50) {\textsf{+}};
 			\node[black] (111) at (2.20,1.00) {\textsf{+}};
+			\node[black] (121) at (2.30,0.50) {\textsf{+}};
 			\node[black] (131) at (2.30,0.00) {\textsf{+}};
 			
-			\node[black] (141) at (0.80,-5.00) {\textsf{+}};
-			\node[black] (151) at (1.60,-4.00) {\textsf{+}};
-			\node[black] (171) at (1.90,-3.00) {\textsf{+}};
-			\node[black] (191) at (2.20,-2.00) {\textsf{+}};
-			\node[black] (211) at (2.30,-1.00) {\textsf{+}};
-			
-			\draw [black] plot [smooth] coordinates {(0,6.6) (1.5,5) (2.1,3) (2.3,0) (1.9,-3) (0.8,-5) (0,-5.5)};
+			\node[black] (141) at (0.80,-5.50) {\textsf{+}};
+			\node[black] (151) at (1.30,-5.00) {\textsf{+}};
+			\node[black] (161) at (1.70,-4.50) {\textsf{+}};
+			\node[black] (171) at (1.90,-4.00) {\textsf{+}};
+			\node[black] (181) at (2.05,-3.50) {\textsf{+}};
+			\node[black] (191) at (2.10,-3.00) {\textsf{+}};
+			\node[black] (201) at (2.20,-2.50) {\textsf{+}};
+			\node[black] (211) at (2.20,-2.00) {\textsf{+}};
+			\node[black] (221) at (2.20,-1.50) {\textsf{+}};
+			\node[black] (231) at (2.20,-1.00) {\textsf{+}};
+			\node[black] (241) at (2.30,-0.50) {\textsf{+}};
+
+			\draw [black] plot [smooth] coordinates {(0,6.8) (1.7,5) (2.15,3) (2.3,0) (2.1,-3) (1.3,-5) (0,-6)};
 		
 		% 3V		
-			\node[pink]  (12) at (0.50,9.00) {\textsf{+}};
-			\node[pink]  (32) at (1.50,8.00) {\textsf{+}};
-			\node[pink]  (52) at (2.10,7.00) {\textsf{+}};
-			\node[pink]  (12) at (2.70,6.00) {\textsf{+}};
-			\node[pink]  (32) at (3.20,5.00) {\textsf{+}};
-			\node[pink]  (52) at (3.30,4.00) {\textsf{+}};
+			\node[pink]  (12) at (0.70,9.00) {\textsf{+}};
+			\node[pink]  (22) at (1.20,8.50) {\textsf{+}};
+			\node[pink]  (32) at (1.60,8.00) {\textsf{+}};
+			\node[pink]  (42) at (2.00,7.50) {\textsf{+}};
+			\node[pink]  (52) at (2.40,7.00) {\textsf{+}};
+			\node[pink]  (62) at (2.70,6.50) {\textsf{+}};
+			\node[pink]  (12) at (3.00,6.00) {\textsf{+}};
+			\node[pink]  (22) at (3.10,5.50) {\textsf{+}};
+			\node[pink]  (32) at (3.30,5.00) {\textsf{+}};
+			\node[pink]  (42) at (3.40,4.50) {\textsf{+}};
+			\node[pink]  (52) at (3.40,4.00) {\textsf{+}};
+			\node[pink]  (62) at (3.50,3.50) {\textsf{+}};
 			\node[pink]  (72) at (3.50,3.00) {\textsf{+}};
+			\node[pink]  (82) at (3.50,2.50) {\textsf{+}};
 			\node[pink]  (92) at (3.50,2.00) {\textsf{+}};
-			\node[pink] (112) at (3.50,1.00) {\textsf{+}};
-			\node[pink] (132) at (3.50,0.00) {\textsf{+}};
+			\node[pink] (102) at (3.60,1.50) {\textsf{+}};
+			\node[pink] (112) at (3.60,1.00) {\textsf{+}};
+			\node[pink] (122) at (3.60,0.50) {\textsf{+}};
+			\node[pink] (132) at (3.40,0.00) {\textsf{+}};
 			
 			
-			\node[pink] (182) at (2.00,-6.00) {\textsf{+}};
-			\node[pink] (202) at (2.30,-5.00) {\textsf{+}};
-			\node[pink] (222) at (2.80,-4.00) {\textsf{+}};
-			\node[pink] (242) at (3.30,-3.00) {\textsf{+}};
+			\node[pink] (142) at (1.50,-8.00) {\textsf{+}};
+			\node[pink] (152) at (1.80,-7.50) {\textsf{+}};
+			\node[pink] (162) at (1.90,-7.00) {\textsf{+}};
+			\node[pink] (172) at (2.70,-6.50) {\textsf{+}};
+			\node[pink] (182) at (2.60,-6.00) {\textsf{+}};
+			\node[pink] (192) at (2.90,-5.50) {\textsf{+}};
+			\node[pink] (202) at (3.00,-5.00) {\textsf{+}};
+			\node[pink] (212) at (3.30,-4.50) {\textsf{+}};
+			\node[pink] (222) at (3.40,-4.00) {\textsf{+}};
+			\node[pink] (232) at (3.40,-3.50) {\textsf{+}};
+			\node[pink] (242) at (3.50,-3.00) {\textsf{+}};
+			\node[pink] (252) at (3.60,-2.50) {\textsf{+}};
 			\node[pink] (262) at (3.50,-2.00) {\textsf{+}};
-			\node[pink] (282) at (3.50,-1.00) {\textsf{+}};
+			\node[pink] (272) at (3.60,-1.50) {\textsf{+}};
+			\node[pink] (282) at (3.60,-1.00) {\textsf{+}};
+			\node[pink] (292) at (3.50,-0.50) {\textsf{+}};
 
-			\draw [pink] plot [smooth] coordinates {(0.5,9) (2.7,6) (3.4,4) (3.5,0) (3.5,-2)(3,-4) (1.8,-6) (0,-7.5)};
+			\draw [pink] plot [smooth] coordinates {(0.7,9) (2,7.5) (3,6) (3.25,5.5) (3.4,4.5) (3.6,0) (3.4,-4) (2.1,-7.5) (0.3,-8.8)};
 
 		% 4V		
-			\node[cyan]  (13) at (4.10,9.00) {\textsf{+}};
-			\node[cyan]  (33) at (4.40,8.00) {\textsf{+}};
-			\node[cyan]  (53) at (4.50,7.00) {\textsf{+}};
-			\node[cyan]  (73) at (4.60,6.00) {\textsf{+}};
-			\node[cyan]  (93) at (4.70,5.00) {\textsf{+}};
-			\node[cyan] (113) at (4.70,4.00) {\textsf{+}};
-			\node[cyan] (133) at (4.70,3.00) {\textsf{+}};
-			\node[cyan] (153) at (4.70,2.00) {\textsf{+}};
-			\node[cyan] (173) at (4.70,1.00) {\textsf{+}};
+			\node[cyan]  (13) at (4.30,9.00) {\textsf{+}};
+			\node[cyan]  (23) at (4.50,8.50) {\textsf{+}};
+			\node[cyan]  (33) at (4.50,8.00) {\textsf{+}};
+			\node[cyan]  (43) at (4.60,7.50) {\textsf{+}};
+			\node[cyan]  (53) at (4.60,7.00) {\textsf{+}};
+			\node[cyan]  (63) at (4.80,6.50) {\textsf{+}};
+			\node[cyan]  (73) at (4.90,6.00) {\textsf{+}};
+			\node[cyan]  (83) at (4.90,5.50) {\textsf{+}};
+			\node[cyan]  (93) at (4.90,5.00) {\textsf{+}};
+			\node[cyan] (103) at (4.90,4.50) {\textsf{+}};
+			\node[cyan] (113) at (4.90,4.00) {\textsf{+}};
+			\node[cyan] (123) at (4.90,3.50) {\textsf{+}};
+			\node[cyan] (133) at (4.90,3.00) {\textsf{+}};
+			\node[cyan] (143) at (4.90,2.50) {\textsf{+}};
+			\node[cyan] (153) at (4.90,2.00) {\textsf{+}};
+			\node[cyan] (163) at (4.90,1.50) {\textsf{+}};
+			\node[cyan] (173) at (4.90,1.00) {\textsf{+}};
+			\node[cyan] (183) at (4.80,0.50) {\textsf{+}};
 			\node[cyan] (193) at (4.80,0.00) {\textsf{+}};
-
-			\node[cyan] (303) at (4.60,-4.00) {\textsf{+}};
+			
+			\node[cyan] (203) at (4.20,-8.80) {\textsf{+}};
+			\node[cyan] (213) at (4.30,-8.50) {\textsf{+}};
+			\node[cyan] (223) at (4.30,-8.00) {\textsf{+}};
+			\node[cyan] (233) at (4.50,-7.50) {\textsf{+}};
+			\node[cyan] (243) at (4.55,-7.00) {\textsf{+}};
+			\node[cyan] (253) at (4.60,-6.50) {\textsf{+}};
+			\node[cyan] (263) at (4.65,-6.00) {\textsf{+}};
+			\node[cyan] (273) at (4.70,-5.50) {\textsf{+}};
+			\node[cyan] (283) at (4.80,-5.00) {\textsf{+}};
+			\node[cyan] (293) at (4.80,-4.50) {\textsf{+}};
+			\node[cyan] (303) at (4.80,-4.00) {\textsf{+}};
+			\node[cyan] (313) at (4.85,-3.50) {\textsf{+}};
 			\node[cyan] (323) at (4.90,-3.00) {\textsf{+}};
-			\node[cyan] (343) at (4.90,-2.00) {\textsf{+}};
-			\node[cyan] (363) at (4.90,-1.00) {\textsf{+}};
+			\node[cyan] (333) at (4.90,-2.50) {\textsf{+}};
+			\node[cyan] (343) at (5.00,-2.00) {\textsf{+}};
+			\node[cyan] (353) at (5.00,-1.50) {\textsf{+}};
+			\node[cyan] (363) at (5.00,-1.00) {\textsf{+}};
+			\node[cyan] (373) at (5.00,-0.50) {\textsf{+}};
 
-			\draw [cyan] plot [smooth] coordinates {(4.1,9) (4.4,8) (4.7,6) (4.8,0) (4.9,-3) (4.6,-4) (3.9,-5) (3.2,-6) (2.9,-7) (2.7,-8.8)};
+			\draw [cyan] plot [smooth] coordinates {(4.3,9) (4.7,8) (4.8,7.5) (5,6) (5,0) (4.8,-5) (4.3,-8) (4.1,-8.8)};
 
 		% 5V	
-			\node[green]  (14) at (7.80,9.00) {\textsf{+}};
-			\node[green]  (34) at (7.10,8.00) {\textsf{+}};
+			\node[green]  (14) at (6.90,9.00) {\textsf{+}};
+			\node[green]  (24) at (6.80,8.50) {\textsf{+}};
+			\node[green]  (34) at (6.60,8.00) {\textsf{+}};
+			\node[green]  (44) at (6.50,7.50) {\textsf{+}};
 			\node[green]  (54) at (6.50,7.00) {\textsf{+}};
-			\node[green]  (74) at (6.30,6.00) {\textsf{+}};
-			\node[green]  (94) at (6.20,5.00) {\textsf{+}};
+			\node[green]  (64) at (6.40,6.50) {\textsf{+}};	
+			\node[green]  (74) at (6.40,6.00) {\textsf{+}};
+			\node[green]  (84) at (6.40,5.50) {\textsf{+}};
+			\node[green]  (94) at (6.40,5.00) {\textsf{+}};
+			\node[green] (104) at (6.30,4.50) {\textsf{+}};
 			\node[green] (114) at (6.20,4.00) {\textsf{+}};
+			\node[green] (124) at (6.20,3.50) {\textsf{+}};
 			\node[green] (134) at (6.20,3.00) {\textsf{+}};
+			\node[green] (144) at (6.10,2.50) {\textsf{+}};
 			\node[green] (154) at (6.10,2.00) {\textsf{+}};
+			\node[green] (164) at (6.10,1.50) {\textsf{+}};
 			\node[green] (174) at (6.10,1.00) {\textsf{+}};
-			\node[green] (194) at (6.20,0.00) {\textsf{+}};
+			\node[green] (184) at (6.10,0.50) {\textsf{+}};
+			\node[green] (194) at (6.10,0.00) {\textsf{+}};
 			
-			\node[green] (214) at (6.20,-1.00) {\textsf{+}};
-			\node[green] (234) at (6.20,-2.00) {\textsf{+}};
-			\node[green] (254) at (6.35,-3.00) {\textsf{+}};
-			\node[green] (274) at (6.50,-4.00) {\textsf{+}};
-			\node[green] (214) at (6.70,-5.00) {\textsf{+}};
-			\node[green] (234) at (7.20,-6.00) {\textsf{+}};
-			\node[green] (254) at (7.60,-7.00) {\textsf{+}};
-			\node[green] (274) at (7.80,-8.00) {\textsf{+}};
-			\node[green] (274) at (8.00,-8.80) {\textsf{+}};
-
-
-			\draw [green] plot [smooth] coordinates {(7.8,9) (6.5,7) (6.1,0) (6.7,-5) (7.6,-7) (7.8,-8) (8,-8.8)};
+			\node[green] (204) at (6.20,-0.50) {\textsf{+}};
+			\node[green] (214) at (6.30,-1.00) {\textsf{+}};
+			\node[green] (224) at (6.30,-1.50) {\textsf{+}};
+			\node[green] (234) at (6.30,-2.00) {\textsf{+}};
+			\node[green] (244) at (6.30,-2.50) {\textsf{+}};
+			\node[green] (254) at (6.30,-3.00) {\textsf{+}};
+			\node[green] (264) at (6.40,-3.50) {\textsf{+}};
+			\node[green] (274) at (6.30,-4.00) {\textsf{+}};
+			\node[green] (284) at (6.50,-4.50) {\textsf{+}};
+			\node[green] (294) at (6.50,-5.00) {\textsf{+}};
+			\node[green] (304) at (6.50,-5.50) {\textsf{+}};
+			\node[green] (314) at (6.60,-6.00) {\textsf{+}};
+			\node[green] (324) at (6.60,-6.50) {\textsf{+}};
+			\node[green] (334) at (6.60,-7.00) {\textsf{+}};
+			\node[green] (344) at (6.70,-7.50) {\textsf{+}};
+			\node[green] (354) at (6.90,-8.00) {\textsf{+}};
+			\node[green] (364) at (7.00,-8.50) {\textsf{+}};
+			\node[green] (374) at (7.10,-8.80) {\textsf{+}};
+		
+			\draw [green] plot [smooth] coordinates {(6.9,9) (6.5,8) (6.2,0) (6.6,-7) (6.75,-8) (7.1,-8.8)};
 
 		% 6V		
 			\node (05) at (11,8.55) {};
@@ -177,4 +248,4 @@
 
 	\end{tikzpicture}
 	\caption{Messwerte}
-	\label{fig:Diagramm2}
+	\label{fig:Diagramm1}
